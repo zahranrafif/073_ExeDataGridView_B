@@ -42,7 +42,16 @@ namespace ExeDataGridView
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            this.Close();
+            DataBinding2 dbin = new DataBinding2();
+            dbin.Show();
+        }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Fmenu menu = new Fmenu();
+            menu.Show();
         }
     }
 }
